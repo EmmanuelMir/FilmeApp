@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FilmesApp</string>
+    <string name="large_text">
+        ""
+    </string>
+
+    <string name="tmdb_source">fonte: "TMDb"</string>
+    <string name="action_settings">Atualizar</string>
+    <string name="Detalhes">Detalhes</string>
+    <string name="filme_titulo">""</string>
+    <string name="digite_o_titulo_do_filme">Digite o título do filme</string>
+    <string name="title_activity_busca_view">BuscaView</string>
+    <string name="proxima_string">PRÓXIMA</string>
+    <string name="title_activity_details_view">DetailsView</string>
+    <string name="posterpath">posterpath</string>
+    <string name="adult">adult</string>
+    <string name="overview">overview</string>
+    <string name="releasedate">releaseDate</string>
+    <string name="genreids">genreIds</string>
+    <string name="id_str">id</string>
+    <string name="original_title">Original Title</string>
+    <string name="originallanguage">originalLanguage</string>
+    <string name="title_filme">title</string>
+    <string name="backdroppath">backdropPath</string>
+    <string name="popularity">popularity</string>
+    <string name="votecount">voteCount</string>
+    <string name="video">video</string>
+    <string name="voteaverage">voteAverage</string>
+</resources>
