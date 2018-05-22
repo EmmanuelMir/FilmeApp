@@ -1,10 +1,11 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.banco;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
-import android.arch.persistence.room.Update;
+
+import com.emmanuelmir.filmesapp.models.WrapperModel;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public interface FilmeDao {
 
     @Query("SELECT * FROM result WHERE title LIKE :title AND "
             + "voteAverage LIKE :voteAverage ")
-    WrapperModel.FilmesModel.Result findByName(String title, float voteAverage );
+    WrapperModel.FilmesModel.Result findByName(String title, float voteAverage);
 
     @Insert
     void insertAll(List<WrapperModel.FilmesModel.Result> results);
@@ -34,7 +35,7 @@ public interface FilmeDao {
     void insertFilmeModel(WrapperModel.FilmesModel filmesModel);
 
     @Query("UPDATE FilmesModel SET page = :page WHERE totalPages = :totalPages")
-            void updateFilmeModelPages(int page,int totalPages);
+            void updateFilmeModelPages(int page, int totalPages);
 
     @Delete
     void delete(WrapperModel.FilmesModel.Result result);

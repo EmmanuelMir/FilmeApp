@@ -1,10 +1,8 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.models;
 
-import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
-import android.arch.persistence.room.Relation;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -20,7 +18,7 @@ public class WrapperModel {
     @JsonPropertyOrder({
             "api_key"
     })
-    static class ApiKeyChave{
+    public static class ApiKeyChave{
         @JsonProperty("api_key")
         private String api_key = "f6006d075c4c511ee2ccac2b49183665";
 
@@ -43,7 +41,7 @@ public class WrapperModel {
     /**
      * Escopo das classes gerados automaticamente no site http://www.jsonschema2pojo.org/
      */
-    static class APIKeyModel {
+    public static class APIKeyModel {
 
         @JsonProperty("success")
         private boolean success;
@@ -126,7 +124,7 @@ public class WrapperModel {
             "total_results",
             "total_pages"
     })@Entity
-    static class FilmesModel {
+    public static class FilmesModel {
 
         @JsonProperty("page")
         private int page;
@@ -223,7 +221,7 @@ public class WrapperModel {
                 "vote_average"
         })
         @Entity
-        static class Result {
+        public static class Result {
 
             //@ColumnInfo(name = "posterPath")
             @JsonProperty("poster_path")

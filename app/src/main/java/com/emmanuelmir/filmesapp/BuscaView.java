@@ -13,6 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
 
+import com.emmanuelmir.filmesapp.controller.WrapperController;
+import com.emmanuelmir.filmesapp.eventbus.BusGlobal;
+import com.emmanuelmir.filmesapp.models.WrapperModel;
+
 import org.greenrobot.eventbus.EventBus;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;

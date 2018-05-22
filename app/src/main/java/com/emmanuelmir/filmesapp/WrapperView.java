@@ -20,6 +20,13 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
+import com.emmanuelmir.filmesapp.banco.RoomDb;
+import com.emmanuelmir.filmesapp.banco.RoomDbInitializer;
+import com.emmanuelmir.filmesapp.controller.WrapperController;
+import com.emmanuelmir.filmesapp.eventbus.BusGlobal;
+import com.emmanuelmir.filmesapp.models.WrapperModel;
+
 import org.greenrobot.eventbus.EventBus;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;

@@ -1,14 +1,16 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.controller;
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.emmanuelmir.filmesapp.BuscaView;
+import com.emmanuelmir.filmesapp.R;
+import com.emmanuelmir.filmesapp.WrapperView;
+import com.emmanuelmir.filmesapp.models.WrapperModel;
 
 import java.util.ArrayList;
 import java.util.List;

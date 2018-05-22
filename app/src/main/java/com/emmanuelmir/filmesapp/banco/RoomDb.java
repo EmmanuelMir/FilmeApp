@@ -1,9 +1,11 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.banco;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
+
+import com.emmanuelmir.filmesapp.models.WrapperModel;
 
 /**
  * Database instanciada em singleton, com o fim de evitar múltiplas instâncias do Banco.

@@ -1,4 +1,4 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.eventbus;
 
 import org.greenrobot.eventbus.EventBus;
 

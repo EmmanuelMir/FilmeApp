@@ -1,9 +1,11 @@
-package com.emmanuelmir.filmesapp;
+package com.emmanuelmir.filmesapp.banco;
 
 import android.database.sqlite.SQLiteConstraintException;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.util.Log;
+
+import com.emmanuelmir.filmesapp.models.WrapperModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +65,7 @@ public class RoomDbInitializer {
         Log.d(RoomDbInitializer.TAG, "Rows Count: " + resultList.size());
     }
 
-    private static void populateWithRealData(RoomDb db,WrapperModel.FilmesModel filmesModel) {
+    private static void populateWithRealData(RoomDb db, WrapperModel.FilmesModel filmesModel) {
         List<WrapperModel.FilmesModel.Result> results = new ArrayList(filmesModel.getResults());
         if(db.filmeDao().getFilmesModel()==null) {
             addFilmeModel(db, filmesModel);

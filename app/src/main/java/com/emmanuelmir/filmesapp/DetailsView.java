@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.emmanuelmir.filmesapp.eventbus.BusGlobal;
+import com.emmanuelmir.filmesapp.models.WrapperModel;
+
 /**
  * Classe dos detalhes dos filmes.
  */
